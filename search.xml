@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>类原生及原生安卓优化</title>
+      <link href="/2022/07/30/android1/"/>
+      <url>/2022/07/30/android1/</url>
+      
+        <content type="html"><![CDATA[<h1 id="前言：国内软件很多较为臃肿，国内UI便开发出了应对策略，类原生安卓主要是为了适应国外的使用环境，对后台、耗电等管控较差，同时自定义项相对于国内UI也较少，但是可以进一步优化。（多数基于root）"><a href="#前言：国内软件很多较为臃肿，国内UI便开发出了应对策略，类原生安卓主要是为了适应国外的使用环境，对后台、耗电等管控较差，同时自定义项相对于国内UI也较少，但是可以进一步优化。（多数基于root）" class="headerlink" title="前言：国内软件很多较为臃肿，国内UI便开发出了应对策略，类原生安卓主要是为了适应国外的使用环境，对后台、耗电等管控较差，同时自定义项相对于国内UI也较少，但是可以进一步优化。（多数基于root）"></a>前言：国内软件很多较为臃肿，国内UI便开发出了应对策略，类原生安卓主要是为了适应国外的使用环境，对后台、耗电等管控较差，同时自定义项相对于国内UI也较少，但是可以进一步优化。（多数基于root）</h1><h1 id="优化分类"><a href="#优化分类" class="headerlink" title="优化分类"></a>优化分类</h1><h2 id="一-后台压制"><a href="#一-后台压制" class="headerlink" title="一.后台压制"></a>一.后台压制</h2><h3 id="1-黑域"><a href="#1-黑域" class="headerlink" title="1.黑域"></a>1.黑域</h3><img src="https://mmmiaos.oss-cn-shanghai.aliyuncs.com/pictures/%E9%BB%91%E9%98%88.jpg" alt="黑阈" style="zoom: 33%;"><p>一款老牌付费后台压制软件（不付费功能完全够用），会处理已在名单中的软件，退出软件后，会把软件待机，一段时间仍未运行，将会清除后台，对于没有打开界面的应用也会强制停止它。（可以root或adb来激活使用）</p><h3 id="2-绿色守护"><a href="#2-绿色守护" class="headerlink" title="2.绿色守护"></a>2.绿色守护</h3><img src="https://mmmiaos.oss-cn-shanghai.aliyuncs.com/pictures/%E7%BB%BF%E8%89%B2%E5%AE%88%E6%8A%A4.jpg" alt="绿色守护" style="zoom:33%;"><p>也是一款老牌后台管理软件，界面简洁，功能单一，就是为了压制后台，免费版功能和付费版相差无几。（可以root或adb来激活使用）</p><h3 id="3-Thanox"><a href="#3-Thanox" class="headerlink" title="3.Thanox"></a>3.Thanox</h3><img src="https://mmmiaos.oss-cn-shanghai.aliyuncs.com/pictures/Thanox.jpg" alt="Thanox" style="zoom:33%;"><p>一款优秀的后台管理软件，售价18，界面简洁美观，功能众多，个人认为值得付费。（需要root和xp框架支持）</p><h2 id="二-省电设置"><a href="#二-省电设置" class="headerlink" title="二.省电设置"></a>二.省电设置</h2><h3 id="1-软件冻结"><a href="#1-软件冻结" class="headerlink" title="1.软件冻结"></a>1.软件冻结</h3><h4 id="①冰箱icebox"><a href="#①冰箱icebox" class="headerlink" title="①冰箱icebox"></a>①冰箱icebox</h4><img src="https://mmmiaos.oss-cn-shanghai.aliyuncs.com/pictures/icebox.jpg" alt="icebox" style="zoom:33%;"><p>界面美观，动画流畅，但是需要付费，如果需求不大，免费版仍然够用。（root或adb）</p><h4 id="②小黑屋"><a href="#②小黑屋" class="headerlink" title="②小黑屋"></a>②小黑屋</h4><img src="https://mmmiaos.oss-cn-shanghai.aliyuncs.com/pictures/%E5%B0%8F%E9%BB%91%E5%B1%8B.jpg" alt="小黑屋" style="zoom:33%;"><p>个人更加推荐，免费版和冰箱免费版差不多，但是付费价格更便宜。（root或adb）</p><h3 id="2-停用谷歌服务"><a href="#2-停用谷歌服务" class="headerlink" title="2.停用谷歌服务"></a>2.停用谷歌服务</h3><p>对于国内，因为某些原因，谷歌服务是连接不上的，我们便可以将其删除或者禁用，但是一些软件对于谷歌服务的要求是必须的，为了能够使用这些软件，同时不增加耗电，可以安卓microG来代替谷歌服务，通过magisk来进行刷入。（需root）</p><img src="https://mmmiaos.oss-cn-shanghai.aliyuncs.com/pictures/microg.jpg" alt="microg" style="zoom: 33%;"><h2 id="三-系统调度"><a href="#三-系统调度" class="headerlink" title="三.系统调度"></a>三.系统调度</h2><h3 id="Scene"><a href="#Scene" class="headerlink" title="Scene"></a>Scene</h3><img src="https://mmmiaos.oss-cn-shanghai.aliyuncs.com/pictures/scene.jpg" alt="scene" style="zoom:33%;"><p>一款功能丰富的软件，主要是限制CPU和GPU频率来达到省电的目的，可以自行管理软件名单吗，对于每个软件和不同场景调用不同的CPU、GPU性能，同时有大量的小工具可以使用，需付费。个人推荐Scene  Alpha1版本，无需付费，大部分功能可用。（需root）</p><h2 id="四-系统美化"><a href="#四-系统美化" class="headerlink" title="四.系统美化"></a>四.系统美化</h2><p>类原生安卓大多没有像国内UI一样的主题商店，想要美化一些自定义较少的类原生就需要自己动手。</p><h3 id="1-桌面启动器"><a href="#1-桌面启动器" class="headerlink" title="1.桌面启动器"></a>1.桌面启动器</h3><p>Lawnchair</p><img src="https://mmmiaos.oss-cn-shanghai.aliyuncs.com/pictures/lawnchair.jpg" alt="lawnchair" style="zoom: 50%;"><p>一款漂亮的启动器</p><img src="https://mmmiaos.oss-cn-shanghai.aliyuncs.com/pictures/%E6%A1%8C%E9%9D%A2.jpg" alt="桌面" style="zoom:33%;"><p>使用Lawnchair之后的桌面，再通过magisk刷入quickswitch模块（需root），讲其替换为系统软件，效果更加理想。</p><h3 id="2-图标包"><a href="#2-图标包" class="headerlink" title="2.图标包"></a>2.图标包</h3><h4 id="①pure图标"><a href="#①pure图标" class="headerlink" title="①pure图标"></a>①pure图标</h4><img src="https://mmmiaos.oss-cn-shanghai.aliyuncs.com/pictures/pure.jpg" alt="pure" style="zoom: 67%;"><img src="https://mmmiaos.oss-cn-shanghai.aliyuncs.com/pictures/pure1.jpg" alt="pure1" style="zoom:33%;"><h4 id="②Origin图标"><a href="#②Origin图标" class="headerlink" title="②Origin图标"></a>②Origin图标</h4><img src="https://mmmiaos.oss-cn-shanghai.aliyuncs.com/pictures/origin.jpg" alt="origin" style="zoom: 50%;"><img src="https://mmmiaos.oss-cn-shanghai.aliyuncs.com/pictures/origin1.jpg" alt="origin1" style="zoom:33%;"><h3 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h3><img src="https://mmmiaos.oss-cn-shanghai.aliyuncs.com/pictures/%E5%AD%97%E4%BD%93.jpg" alt="字体" style="zoom: 33%;"><p>可以自行下载.zip格式的字体包通过magisk刷入。（需要root）</p><p>ps：以上出现的所有软件和资源均可在<a href="https://coolapk.com/"><em><strong>酷安app</strong></em></a>找到并下载，支持正版软件，支持开发者。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 手机 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 安卓 </tag>
+            
+            <tag> 优化 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>第一篇文章</title>
+      <link href="/2022/07/29/helloworld/"/>
+      <url>/2022/07/29/helloworld/</url>
+      
+        <content type="html"><![CDATA[<p>你好，这是我的第一篇文章，第一篇基于hexo的搭建的博客的文章或一段话，<br>之前一直用wordpress搭建博客，<br>因为资金，备案的问题，之前的服务器无法继续运行，但是又想追求独立，<br>尝试把博客托管到gitee，希望是一个好的开始，<br>尽力更新自己的文章。  </p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 杂谈 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
